@@ -26,9 +26,12 @@ SLOT="0"
 DEPEND="acct-user/jellyseerr
 	acct-group/jellyseerr
 	media-libs/vips
-	net-libs/nodejs
+	>=net-libs/nodejs-22
 	sys-apps/yarn
-	dev-db/sqlite:3"
+	dev-db/sqlite:3
+	>=sys-apps/pnpm-bin-9
+	dev-vcs/git
+	"
 BDEPEND="${DEPEND}
 		${PYTHON_DEPS}"
 RDEPEND="${DEPEND}"
